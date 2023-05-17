@@ -89,6 +89,7 @@ resource "aws_s3_bucket" "s3-bucket" {
 resource "aws_security_group" "ssh_secgroup" {
   name        = var.security_group_name
   description = var.security_group_description
+  vpc_id      = aws_vpc.demo_vpc.id
 
   ingress {
     from_port   = var.ssh_from_port
