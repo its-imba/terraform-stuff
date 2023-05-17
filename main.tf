@@ -12,7 +12,7 @@ resource "aws_instance" "demo1" {
   }
 }
 
-resource "aws_s3_bucket" "sam-demo_bucket" {
+resource "aws_s3_bucket" "s3-bucket" {
   bucket = "sam-demo-bucket"
 
   tags = {
