@@ -13,7 +13,7 @@ resource "aws_instance" "demo1" {
 }
 
 resource "aws_s3_bucket" "s3-bucket" {
-  bucket = "sam-demo-bucket-${random_string.random_id.result}"
+  bucket = "sam-demo-bucket-01"
 
   tags = {
     Name         = "sam-demo-bucket"
