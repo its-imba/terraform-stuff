@@ -46,5 +46,5 @@ resource "aws_security_group_rule" "allow_ssh" {
 
 resource "aws_key_pair" "demo_key" {
   key_name   = "demo-key"
-  public_key = file("/path/to/your/qa-key-15th-may.pem")
+  public_key = file("~/qa-key-15th-may.pem")
 }
