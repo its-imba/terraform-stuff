@@ -6,7 +6,7 @@ public_key_path = "~/qa-key-15th-may.pub"
 
 ssh_security_group_name        = "ssh-security-group"
 ssh_security_group_description = "Allow SSH inbound traffic"
-ssh_security_group_from_port   = 22
-ssh_security_group_to_port     = 22
-ssh_security_group_protocol    = "tcp"
-ssh_security_group_cidr_blocks = ["0.0.0.0/0"]
+security_group_name = "ssh-security-group"
+ssh_from_port       = 22
+ssh_to_port         = 22
+ssh_cidr_block      = "0.0.0.0/0"
