@@ -6,7 +6,7 @@ resource "aws_instance" "demo1" {
   ami           = "ami-09744628bed84e434"
   instance_type = "t2.micro"
 
-  key_name = aws_key_pair.demo_key.demo-key
+  key_name = aws_key_pair.demo_key.key_name
 
   tags = {
     Name      = "demo-instance"
