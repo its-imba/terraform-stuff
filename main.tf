@@ -36,7 +36,7 @@ resource "aws_security_group" "ssh_secgroup" {
   ingress {
     from_port   = var.ssh_from_port
     to_port     = var.ssh_to_port
-    protocol    = "tcp"
+    protocol    = var.security_group_protocol
     cidr_blocks = [var.ssh_cidr_block]
   }
 }

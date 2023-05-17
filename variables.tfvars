@@ -9,3 +9,4 @@ security_group_description = "Allow SSH inbound traffic"
 ssh_from_port       = 22
 ssh_to_port         = 22
 ssh_cidr_block      = "0.0.0.0/0"
+security_group_protocol = "tcp"

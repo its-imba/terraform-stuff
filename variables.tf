@@ -50,7 +50,7 @@ variable "ssh_to_port" {
   type        = number
 }
 
-variable "ssh_security_group_protocol" {
+variable "security_group_protocol" {
   description = "Protocol for the SSH security group"
   type        = string
 }
