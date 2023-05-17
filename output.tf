@@ -5,3 +5,7 @@ output "vm_public_ip" {
 output "s3_bucket_domain" {
   value = aws_s3_bucket.s3-bucket.bucket_domain_name
 }
+
+output "s3_bucket_region" {
+  value = aws_s3_bucket.s3-bucket.region
+}
