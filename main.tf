@@ -16,6 +16,8 @@ resource "aws_instance" "demo1" {
     Name      = "demo-instance"
     S3_Bucket = "sam-demo-bucket"
   }
+
+  vpc_security_group_ids = [aws_security_group.ssh_secgroup.id]
 }
 
 resource "aws_s3_bucket" "s3-bucket" {
@@ -24,5 +26,17 @@ resource "aws_s3_bucket" "s3-bucket" {
   tags = {
     Name                = "sam-demo-bucket"
     Associated_Instance = "demo-instance"
+  }
+}
+
+resource "aws_security_group" "ssh_secgroup" {
+  name        = var.security_group_name
+  description = "Allow SSH inbound traffic"
+
+  ingress {
+    from_port   = var.ssh_from_port
+    to_port     = var.ssh_to_port
+    protocol    = "tcp"
+    cidr_blocks = [var.ssh_cidr_block]
   }
 }
