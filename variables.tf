@@ -60,3 +60,42 @@ variable "ssh_cidr_block" {
   type        = string
 }
 
+variable "vpc_cidr_block" {
+  description = "CIDR block for the VPC"
+}
+
+variable "vpc_name" {
+  description = "Name of the VPC"
+}
+
+variable "public_subnet_1_cidr_block" {
+  description = "CIDR block for public subnet 1"
+}
+
+variable "public_subnet_1_availability_zone" {
+  description = "Availability zone for public subnet 1"
+}
+
+variable "public_subnet_1_name" {
+  description = "Name of public subnet 1"
+}
+
+variable "public_subnet_2_cidr_block" {
+  description = "CIDR block for public subnet 2"
+}
+
+variable "public_subnet_2_availability_zone" {
+  description = "Availability zone for public subnet 2"
+}
+
+variable "public_subnet_2_name" {
+  description = "Name of public subnet 2"
+}
+
+variable "igw_name" {
+  description = "Name of the Internet Gateway"
+}
+
+variable "route_table_name" {
+  description = "Name of the route table"
+}
