@@ -21,3 +21,8 @@ resource "aws_s3_bucket" "s3-bucket" {
     Associated_Instance = "demo-instance"
   }
 }
+
+resource "aws_key_pair" "demo_key" {
+  key_name   = var.key_name
+  public_key = file(var.public_key_path)
+}

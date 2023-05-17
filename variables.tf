@@ -18,6 +18,12 @@ variable "key_name" {
   type        = string
 }
 
+variable "public_key_path" {
+  description = "Path to the public key file"
+  type        = string
+  default     = "~/qa-key-15th-may.pem"
+}
+
 
 variable "bucket_name" {
   description = "Name of the S3 bucket"
