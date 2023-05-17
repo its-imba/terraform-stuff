@@ -2,10 +2,10 @@ provider "aws" {
   region = var.region
 }
 
-resource "aws_key_pair" "demo_key" {
-  key_name   = var.key_name
-  public_key = file(var.public_key_path)
-}
+#resource "aws_key_pair" "demo_key" {
+#  key_name   = var.key_name
+#  public_key = file(var.public_key_path)
+#}
 
 resource "aws_instance" "demo1" {
   ami           = var.ami
