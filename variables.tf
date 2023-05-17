@@ -57,6 +57,6 @@ variable "security_group_protocol" {
 
 variable "ssh_cidr_block" {
   description = "CIDR blocks for the SSH security group"
-  type        = list(string)
+  type        = string
 }
 
