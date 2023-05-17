@@ -30,22 +30,22 @@ variable "bucket_name" {
   type        = string
   default     = "sam-demo-bucket"
 }
-variable "ssh_security_group_name" {
+variable "security_group_name" {
   description = "Name of the SSH security group"
   type        = string
 }
 
-variable "ssh_security_group_description" {
+variable "security_group_description" {
   description = "Description of the SSH security group"
   type        = string
 }
 
-variable "ssh_security_group_from_port" {
+variable "ssh_from_port" {
   description = "Start of the port range for the SSH security group"
   type        = number
 }
 
-variable "ssh_security_group_to_port" {
+variable "ssh_to_port " {
   description = "End of the port range for the SSH security group"
   type        = number
 }
@@ -55,7 +55,7 @@ variable "ssh_security_group_protocol" {
   type        = string
 }
 
-variable "ssh_security_group_cidr_blocks" {
+variable "ssh_cidr_block" {
   description = "CIDR blocks for the SSH security group"
   type        = list(string)
 }
