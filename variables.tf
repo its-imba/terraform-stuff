@@ -45,7 +45,7 @@ variable "ssh_from_port" {
   type        = number
 }
 
-variable "ssh_to_port " {
+variable "ssh_to_port" {
   description = "End of the port range for the SSH security group"
   type        = number
 }
